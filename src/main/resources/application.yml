@@ -1,14 +1,11 @@
 # MySQL
 spring:
   application:
-    name: server
+    name: mungnyang
   datasource:
-    # url: jdbc:mysql://gaplog-db.ctgoi8ye6kr7.ap-northeast-2.rds.amazonaws.com:3306/reborn
-    url: jdbc:mysql://localhost:3306/MongNyangLog
-    # username: admin
-    username: root
-    # password: gaplog123!!
-    password: mydlcodb2004!
+    url: ${DB_DATASOURCE}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
